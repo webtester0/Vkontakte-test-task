@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="675px" preserveAspectRatio="none" style="width:249px;height:675px;" version="1.1" viewBox="0 0 249 675" width="249px" zoomAndPan="magnify"><defs/><g><!--entity _AddForm--><rect fill="#F8F8F8" height="34.4844" rx="3" ry="3" style="stroke: #000000; stroke-width: 0.5;" width="70" x="9.5" y="514"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50" x="19.5" y="536.0059">AddForm</text><ellipse cx="44.3553" cy="473.242" fill="#F8F8F8" rx="38.3553" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50" x="19.3553" y="476.9842">AddForm</text><!--entity _App--><rect fill="#F8F8F8" height="34.4844" rx="3" ry="3" style="stroke: #000000; stroke-width: 0.5;" width="41" x="54" y="116"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="21" x="64" y="138.0059">App</text><ellipse cx="81.3492" cy="75.242" fill="#F8F8F8" rx="17.8492" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="21" x="70.8492" y="78.9842">App</text><!--entity _Button--><rect fill="#F8F8F8" height="34.4844" rx="3" ry="3" style="stroke: #000000; stroke-width: 0.5;" width="58" x="10.5" y="630"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="20.5" y="652.0059">Button</text><ellipse cx="39.3701" cy="589.242" fill="#F8F8F8" rx="29.8701" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="20.3701" y="592.9842">Button</text><!--entity _Card--><rect fill="#F8F8F8" height="34.4844" rx="3" ry="3" style="stroke: #000000; stroke-width: 0.5;" width="46" x="82.5" y="630"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="92.5" y="652.0059">Card</text><ellipse cx="105.3848" cy="589.242" fill="#F8F8F8" rx="21.3848" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="92.3848" y="592.9842">Card</text><!--entity _Column--><rect fill="#F8F8F8" height="34.4844" rx="3" ry="3" style="stroke: #000000; stroke-width: 0.5;" width="64" x="42.5" y="398"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="52.5" y="420.0059">Column</text><ellipse cx="74.6127" cy="357.242" fill="#F8F8F8" rx="34.1127" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="52.6127" y="360.9842">Column</text><ellipse cx="74.5624" cy="274.242" fill="#F8F8F8" rx="39.0624" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="51" x="49.0624" y="277.9842">Columns</text><ellipse cx="173.7352" cy="132.847" fill="#F8F8F8" rx="64.7352" ry="15.347" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="100" x="123.7352" y="136.5892">columns_reducer</text><ellipse cx="74.6838" cy="220.242" fill="#F8F8F8" rx="41.1838" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54" x="47.6838" y="223.9842">container</text><ellipse cx="90.7487" cy="21.242" fill="#F8F8F8" rx="27.7487" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="73.2487" y="24.9842">index</text><ellipse cx="166.3553" cy="75.242" fill="#F8F8F8" rx="38.3553" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50" x="141.3553" y="78.9842">reducers</text><ellipse cx="161.7132" cy="21.242" fill="#F8F8F8" rx="24.2132" ry="13.242" style="stroke: #383838; stroke-width: 0.5;"/><text fill="#000000" font-family="Tahoma, sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="146.7132" y="24.9842">store</text><!--link _AddForm to Button--><path d="M43.0538,548.198 C42.4287,555.199 41.6959,563.406 41.0587,570.5426 " fill="none" id="_AddForm-Button" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="40.5934,575.7538,45.378,567.1452,41.0381,570.7736,37.4097,566.4337,40.5934,575.7538" style="stroke: #000000; stroke-width: 0.5;"/><!--link _AddForm to Card--><path d="M62.1437,548.198 C71.0944,556.414 81.8531,566.2913 90.4139,574.1505 " fill="none" id="_AddForm-Card" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="94.4224,577.8304,90.4977,568.7973,90.7392,574.449,85.0875,574.6905,94.4224,577.8304" style="stroke: #000000; stroke-width: 0.5;"/><!--link AddForm to _AddForm--><path d="M44.5,486.151 C44.5,492.738 44.5,501.069 44.5,508.695 " fill="none" id="AddForm-_AddForm" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="44.5,513.833,48.5,504.833,44.5,508.833,40.5,504.833,44.5,513.833" style="stroke: #000000; stroke-width: 0.5;"/><!--link _App to container--><path d="M74.5,150.389 C74.5,165.083 74.5,186.577 74.5,201.579 " fill="none" id="_App-container" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="74.5,206.788,78.5,197.788,74.5,201.788,70.5,197.788,74.5,206.788" style="stroke: #000000; stroke-width: 0.5;"/><!--link App to _App--><path d="M79.9811,88.151 C79.1578,94.738 78.1164,103.069 77.1631,110.695 " fill="none" id="App-_App" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="76.5209,115.833,81.606,107.3985,77.1409,110.8716,73.6678,106.4065,76.5209,115.833" style="stroke: #000000; stroke-width: 0.5;"/><!--link Button to _Button--><path d="M39.5,602.1512 C39.5,608.7376 39.5,617.0685 39.5,624.6954 " fill="none" id="Button-_Button" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="39.5,629.833,43.5,620.833,39.5,624.833,35.5,620.833,39.5,629.833" style="stroke: #000000; stroke-width: 0.5;"/><!--link Card to _Card--><path d="M105.5,602.1512 C105.5,608.7376 105.5,617.0685 105.5,624.6954 " fill="none" id="Card-_Card" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="105.5,629.833,109.5,620.833,105.5,624.833,101.5,620.833,105.5,629.833" style="stroke: #000000; stroke-width: 0.5;"/><!--link _Column to AddForm--><path d="M65.8228,432.198 C61.8675,439.581 57.1943,448.304 53.2324,455.7 " fill="none" id="_Column-AddForm" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="50.8703,460.109,58.6465,454.065,53.2316,455.7017,51.5949,450.2868,50.8703,460.109" style="stroke: #000000; stroke-width: 0.5;"/><!--link _Column to Card--><path d="M80.8612,432.069 C83.8938,440.305 87.3256,450.563 89.5,460 C98.4754,498.955 102.7132,545.817 104.4565,570.6202 " fill="none" id="_Column-Card" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="104.8102,575.8564,108.1942,566.6072,104.473,570.8678,100.2124,567.1466,104.8102,575.8564" style="stroke: #000000; stroke-width: 0.5;"/><!--link Column to _Column--><path d="M74.5,370.151 C74.5,376.738 74.5,385.069 74.5,392.695 " fill="none" id="Column-_Column" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="74.5,397.833,78.5,388.833,74.5,392.833,70.5,388.833,74.5,397.833" style="stroke: #000000; stroke-width: 0.5;"/><!--link Columns to Column--><path d="M74.5,287.302 C74.5,300.94 74.5,323.047 74.5,338.488 " fill="none" id="Columns-Column" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="74.5,343.847,78.5,334.847,74.5,338.847,70.5,334.847,74.5,343.847" style="stroke: #000000; stroke-width: 0.5;"/><!--link container to Columns--><path d="M74.5,233.061 C74.5,239.659 74.5,247.959 74.5,255.28 " fill="none" id="container-Columns" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="74.5,260.644,78.5,251.644,74.5,255.644,70.5,251.644,74.5,260.644" style="stroke: #000000; stroke-width: 0.5;"/><!--link <b>index</b> to App--><path d="M88.4126,34.061 C87.2312,40.886 85.7349,49.531 84.4368,57.032 " fill="none" id="&lt;b&gt;index&lt;/b&gt;-App" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="83.5761,62.005,89.0526,53.8192,84.429,57.0783,81.1699,52.4546,83.5761,62.005" style="stroke: #000000; stroke-width: 1.0;"/><!--link <b>index</b> to store--><path d="M118.234,21 C122.868,21 127.502,21 132.135,21 " fill="none" id="&lt;b&gt;index&lt;/b&gt;-store" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="137.163,21,128.163,17,132.163,21,128.163,25,137.163,21" style="stroke: #000000; stroke-width: 1.0;"/><!--link reducers to columns_reducer--><path d="M168.019,88.151 C168.894,95.156 170.017,104.133 171.017,112.139 " fill="none" id="reducers-columns_reducer" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="171.686,117.49,174.5365,108.0627,171.0646,112.5288,166.5985,109.0569,171.686,117.49" style="stroke: #000000; stroke-width: 0.5;"/><!--link store to reducers--><path d="M162.66,34.061 C163.303,40.755 164.115,49.2 164.827,56.598 " fill="none" id="store-reducers" style="stroke: #000000; stroke-width: 0.5;"/><polygon fill="#000000" points="165.347,62.005,168.4672,52.6635,164.8684,57.028,160.504,53.4292,165.347,62.005" style="stroke: #000000; stroke-width: 0.5;"/><script type="text/plantuml"><![CDATA[
+@startuml
+
+scale max 1920 width
+top to bottom direction
+
+skinparam nodesep 14
+skinparam ranksep 28
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Tahoma
+skinparam defaultFontSize 12
+skinparam roundCorner 6
+skinparam dpi 150
+skinparam arrowColor black
+skinparam arrowThickness 0.5
+skinparam packageTitleAlignment left
+
+skinparam usecase {
+  borderThickness 0.5
+}
+
+skinparam rectangle {
+  borderThickness 0.5
+}
+
+skinparam component {
+  borderThickness 1
+}
+
+
+rectangle "AddForm" as _AddForm
+(AddForm)
+rectangle "App" as _App
+(App)
+rectangle "Button" as _Button
+(Button)
+rectangle "Card" as _Card
+(Card)
+rectangle "Column" as _Column
+(Column)
+(Columns)
+(columns_reducer)
+(container)
+(<b>index</b>)
+(reducers)
+(store)
+
+
+_AddForm --> (Button)
+_AddForm --> (Card)
+(AddForm) --> _AddForm
+_App ---> (container)
+(App) --> _App
+(Button) --> _Button
+(Card) --> _Card
+_Column --> (AddForm)
+_Column --> (Card)
+(Column) --> _Column
+(Columns) ---> (Column)
+(container) --> (Columns)
+(<b>index</b>) --[thickness=1]> (App)
+(<b>index</b>) -[thickness=1]> (store)
+(reducers) --> (columns_reducer)
+(store) --> (reducers)
+
+@enduml
+
+
+' View and edit on https://arkit.pro
+]]></script></g></svg>

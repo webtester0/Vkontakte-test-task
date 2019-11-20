@@ -1,0 +1,15 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+* {
+  outline: none;
+  font-size: 14px;
+}
+
+#root {
+  background: linear-gradient(#b066fe, #63e2ff);
+  padding: 20px;
+}
