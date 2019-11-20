@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "components/Card";
 import { AddForm } from "components/AddForm";
 import { styled } from "linaria/react";
+import { DragDropContext, Droppable } from "react-beautiful-dnd";
 
 export const Column = ({
   title,
@@ -11,7 +12,11 @@ export const Column = ({
   onAddCard,
   columnIndex
 }) => {
-  const handleRemoveColumn = () => onRemoveColumn(columnIndex);
+  const handleRemoveColumn = () => {
+    confirm("Вы действитильно хотите удалить колонку ?")
+      ? onRemoveColumn(columnIndex)
+      : null;
+  };
 
   return (
     <ColumnWrapper>
@@ -24,11 +29,25 @@ export const Column = ({
         )}
         <BodyContent>
           {cards && (
-            <Items>
-              {cards.map((card, index) => (
-                <Card key={index}>{card}</Card>
-              ))}
-            </Items>
+            <DragDropContext>
+              <Droppable droppableId={`column-${columnIndex}`}>
+                {provided => (
+                  <Items {...provided.droppableProps} ref={provided.innerRef}>
+                    {cards.map((card, index) => (
+                      <Card
+                        key={index}
+                        cardIndex={index}
+                        columnIndex={columnIndex}
+                        ref={provided.innerRef}
+                      >
+                        {card}
+                      </Card>
+                    ))}
+                    {provided.placeholder}
+                  </Items>
+                )}
+              </Droppable>
+            </DragDropContext>
           )}
         </BodyContent>
         <AddForm

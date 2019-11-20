@@ -30,7 +30,7 @@ export const AddForm = ({ isEmptyColumn, addColumn, addCard, columnIndex }) => {
 
   const onAdd = () => {
     if (!isEmptyColumn) {
-      addColumn(value)
+      addColumn(value);
     } else {
       addCard(value, columnIndex);
     }

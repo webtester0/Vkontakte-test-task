@@ -1,9 +1,25 @@
-import React from 'react';
-import { styled } from 'linaria/react';
+import React, { forwardRef } from "react";
+import { styled } from "linaria/react";
+import { Draggable } from "react-beautiful-dnd";
 
-export const Card = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
-};
+export const Card = forwardRef(({ children, cardIndex, columnIndex }, ref) => {
+  return (
+    <Draggable
+      draggableId={`card-${columnIndex}-${cardIndex}`}
+      index={cardIndex}
+    >
+      {provided => (
+        <Wrapper
+          ref={provided.innerRef}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+        >
+          {children}
+        </Wrapper>
+      )}
+    </Draggable>
+  );
+});
 
 const Wrapper = styled.div`
   background-color: #fff;
@@ -12,4 +28,5 @@ const Wrapper = styled.div`
   padding: 12px;
   margin-bottom: 10px;
   line-height: 19px;
+  cursor: grab;
 `;
