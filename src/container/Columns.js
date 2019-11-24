@@ -2,9 +2,9 @@ import React from "react";
 import { Column } from "components/Column";
 import { connect } from "react-redux";
 import { addColumn, removeColumn } from "../store/actions/colums";
-import { addCard } from "../store/actions/cards";
+import { addCard, reorderCards } from "../store/actions/cards";
 
-const Columns = ({ items, addColumnAction, addCardAction, removeColumnAction }) => (
+const Columns = ({ items, addColumnAction, addCardAction, removeColumnAction, reorderCardsAction }) => (
   <>
     {items.map((item, index) => (
       <Column
@@ -13,6 +13,7 @@ const Columns = ({ items, addColumnAction, addCardAction, removeColumnAction }) 
         onAddColumn={addColumnAction}
         onRemoveColumn={removeColumnAction}
         onAddCard={addCardAction}
+        reorderCards = {reorderCardsAction}
         columnIndex={index}
       />
     ))}
@@ -32,7 +33,8 @@ const mapStateToProps = ({ columns }) => ({ items: columns });
 const mapDispatchToProps = dispatch => ({
   addColumnAction: title => dispatch(addColumn(title)),
   addCardAction: (text, columnIndex) => dispatch(addCard(text, columnIndex)),
-  removeColumnAction: columnIndex => dispatch(removeColumn(columnIndex))
+  removeColumnAction: columnIndex => dispatch(removeColumn(columnIndex)),
+  reorderCardsAction: (source, destination) => dispatch(reorderCards(source, destination))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Columns);

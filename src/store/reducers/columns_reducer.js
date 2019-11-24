@@ -1,4 +1,5 @@
 import actionTypes from "../actionTypes";
+import reorderCards from "../../helpers/reorderCards";
 
 const initialState = [
   {
@@ -16,7 +17,8 @@ const initialState = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!"    ]
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!"
+    ]
   }
 ];
 
@@ -42,6 +44,9 @@ export default (state = initialState, action) => {
       ];
     case actionTypes.REMOVE_COLUMN:
       return state.filter((item, index) => index !== action.payload);
+    case actionTypes.CARDS_REORDER:
+      const { source, destination } = action.payload;
+      return reorderCards({ state, source, destination });
     default:
       return state;
   }

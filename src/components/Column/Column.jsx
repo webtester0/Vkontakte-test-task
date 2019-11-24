@@ -10,12 +10,28 @@ export const Column = ({
   onAddColumn,
   onRemoveColumn,
   onAddCard,
+  reorderCards,
   columnIndex
 }) => {
   const handleRemoveColumn = () => {
     confirm("Вы действитильно хотите удалить колонку ?")
       ? onRemoveColumn(columnIndex)
       : null;
+  };
+
+  const onDragEnd = result => {
+    const { source, destination } = result;
+    if (
+      !destination ||
+      (source.droppableId === destination.droppableId &&
+        source.index === destination.index)
+    ) {
+      return;
+    }
+    reorderCards({
+      source,
+      destination
+    });
   };
 
   return (
@@ -29,7 +45,7 @@ export const Column = ({
         )}
         <BodyContent>
           {cards && (
-            <DragDropContext>
+            <DragDropContext onDragEnd={onDragEnd}>
               <Droppable droppableId={`column-${columnIndex}`}>
                 {provided => (
                   <Items {...provided.droppableProps} ref={provided.innerRef}>
