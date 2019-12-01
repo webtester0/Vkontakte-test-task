@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "components/Card";
 import { AddForm } from "components/AddForm";
 import { styled } from "linaria/react";
-import { DragDropContext, Droppable } from "react-beautiful-dnd";
+import { Droppable } from "react-beautiful-dnd";
 
 export const Column = ({
   title,
@@ -10,7 +10,7 @@ export const Column = ({
   onAddColumn,
   onRemoveColumn,
   onAddCard,
-  reorderCards,
+  onRemoveCard,
   columnIndex
 }) => {
   const handleRemoveColumn = () => {
@@ -19,61 +19,59 @@ export const Column = ({
       : null;
   };
 
-  const onDragEnd = result => {
-    const { source, destination } = result;
-    if (
-      !destination ||
-      (source.droppableId === destination.droppableId &&
-        source.index === destination.index)
-    ) {
-      return;
-    }
-    reorderCards({
-      source,
-      destination
-    });
-  };
-
-  return (
-    <ColumnWrapper>
-      <Inner>
-        {title && (
-          <Header>
-            <Title>{title}</Title>
-            <ButtonDelete onClick={handleRemoveColumn}>[X]</ButtonDelete>
-          </Header>
-        )}
-        <BodyContent>
-          {cards && (
-            <DragDropContext onDragEnd={onDragEnd}>
-              <Droppable droppableId={`column-${columnIndex}`}>
-                {provided => (
-                  <Items {...provided.droppableProps} ref={provided.innerRef}>
-                    {cards.map((card, index) => (
-                      <Card
-                        key={index}
-                        cardIndex={index}
-                        columnIndex={columnIndex}
-                        ref={provided.innerRef}
-                      >
-                        {card}
-                      </Card>
-                    ))}
-                    {provided.placeholder}
-                  </Items>
-                )}
-              </Droppable>
-            </DragDropContext>
-          )}
-        </BodyContent>
-        <AddForm
-          isEmptyColumn={cards}
-          addColumn={onAddColumn}
-          addCard={onAddCard}
-          columnIndex={columnIndex}
-        ></AddForm>
-      </Inner>
-    </ColumnWrapper>
+  return cards ? (
+    <Droppable droppableId={`column-${columnIndex}`}>
+      {provided => (
+        <ColumnWrapper {...provided.droppableProps} ref={provided.innerRef}>
+          <Inner>
+            {title && (
+              <Header>
+                <Title>{title}</Title>
+                <ButtonDelete onClick={handleRemoveColumn}>[X]</ButtonDelete>
+              </Header>
+            )}
+            <BodyContent>
+              {
+                <Items>
+                  {cards.map((card, index) => (
+                    <Card
+                      key={index}
+                      cardIndex={index}
+                      columnIndex={columnIndex}
+                      removeCard={onRemoveCard}
+                    >
+                      {card}
+                    </Card>
+                  ))}
+                  {provided.placeholder}
+                </Items>
+              }
+            </BodyContent>
+            <AddForm
+              isEmptyColumn={cards}
+              addColumn={onAddColumn}
+              addCard={onAddCard}
+              columnIndex={columnIndex}
+            ></AddForm>
+          </Inner>
+        </ColumnWrapper>
+      )}
+    </Droppable>
+  ) : (
+    <Droppable droppableId={`column-${columnIndex}`}>
+      {provided => (
+        <ColumnWrapper {...provided.droppableProps} ref={provided.innerRef}>
+          <Inner>
+            <AddForm
+              isEmptyColumn={cards}
+              addColumn={onAddColumn}
+              addCard={onAddCard}
+              columnIndex={columnIndex}
+            ></AddForm>
+          </Inner>
+        </ColumnWrapper>
+      )}
+    </Droppable>
   );
 };
 

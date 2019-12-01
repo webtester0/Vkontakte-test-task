@@ -9,9 +9,7 @@ export const AddForm = ({ isEmptyColumn, addColumn, addCard, columnIndex }) => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
 
-  const handlerClick = useCallback(() => {
-    setOpen(state => !state);
-  }, []);
+  const handlerClick = () => setOpen(state => !state);
 
   const textareaRef = useRef(null);
 
@@ -45,13 +43,13 @@ export const AddForm = ({ isEmptyColumn, addColumn, addCard, columnIndex }) => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [open, handleKeyDown]);
+  }, [open]);
 
   return (
     <>
       {open ? (
         <Form>
-          <Card>
+          <Card columnIndex={columnIndex} cardIndex={9999}>
             <Input>
               <textarea
                 ref={textareaRef}

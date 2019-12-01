@@ -12,3 +12,11 @@ export const reorderCards = ({ source, destination }) => ({
     destination
   }
 });
+
+export const removeCard = (columnIndex, cardIndex) => ({
+  type: actionTypes.REMOVE_CARD,
+  payload: {
+    columnIndex,
+    cardIndex
+  }
+});

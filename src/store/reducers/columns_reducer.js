@@ -34,6 +34,18 @@ export default (state = initialState, action) => {
         }
         return item;
       });
+    case actionTypes.REMOVE_CARD:
+      return state.map((item, index) => {
+        if (action.payload.columnIndex === index) {
+          return {
+            ...item,
+            cards: item.cards.filter(
+              (_, index) => action.payload.cardIndex !== index
+            )
+          };
+        }
+        return item;
+      });
     case actionTypes.ADD_COLUMN:
       return [
         ...state,
