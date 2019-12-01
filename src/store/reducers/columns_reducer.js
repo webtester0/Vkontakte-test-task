@@ -12,12 +12,6 @@ const initialState = [
       "check myciip application",
       "prepare all docs for VKR",
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!"
     ]
   }
 ];

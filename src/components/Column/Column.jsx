@@ -3,6 +3,7 @@ import { Card } from "components/Card";
 import { AddForm } from "components/AddForm";
 import { styled } from "linaria/react";
 import { Droppable } from "react-beautiful-dnd";
+import PropTypes from 'prop-types';
 
 export const Column = ({
   title,
@@ -116,6 +117,7 @@ const ButtonDelete = styled.button`
   border: none;
   cursor: pointer;
   padding: 3px;
+  background-color: transparent;
   &:hover {
     background-color: #c5ccd2;
   }
@@ -128,3 +130,13 @@ const Title = styled.b`
   display: block;
   padding-top: 12px;
 `;
+
+Column.propTypes ={ 
+  cards: PropTypes.node,
+  title: PropTypes.string,
+  columnIndex: PropTypes.number,
+  onAddColumn: PropTypes.func,
+  onRemoveColumn: PropTypes.func,
+  onAddCard: PropTypes.func,
+  onRemoveCard: PropTypes.func,
+}

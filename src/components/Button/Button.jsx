@@ -1,8 +1,9 @@
 import React from 'react';
 import { styled } from 'linaria/react';
+import PropTypes from 'prop-types';
 
-export const Button = ({ children, onClick }) => {
-  return <Btn onClick={onClick}>{children}</Btn>;
+export const Button = ({ children, onClick, className }) => {
+  return <Btn onClick={onClick} className={className}>{children}</Btn>;
 };
 
 const Btn = styled.button`
@@ -14,3 +15,9 @@ const Btn = styled.button`
   font-weight: bold;
   cursor: pointer;
 `;
+
+Button.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
+  onClick: PropTypes.func,
+  className: PropTypes.string
+}

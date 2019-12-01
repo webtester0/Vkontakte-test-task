@@ -4,6 +4,25 @@ import { Button } from "components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import { styled } from "linaria/react";
+import { css } from "linaria";
+import PropTypes from 'prop-types';
+
+
+const ButtonAdd = css`
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  &:hover {
+    border-radius: 0 0 3px 3px;
+    cursor: pointer;
+    background-color: #c5ccd2;
+  }
+`;
 
 export const AddForm = ({ isEmptyColumn, addColumn, addCard, columnIndex }) => {
   const [open, setOpen] = useState(false);
@@ -76,7 +95,7 @@ export const AddForm = ({ isEmptyColumn, addColumn, addCard, columnIndex }) => {
           </Footer>
         </Form>
       ) : (
-        <ButtonAdd onClick={handlerClick}>
+        <Button onClick={handlerClick} className={ButtonAdd}>
           <Icon>
             <FontAwesomeIcon icon={faPlus} />
           </Icon>
@@ -85,7 +104,7 @@ export const AddForm = ({ isEmptyColumn, addColumn, addCard, columnIndex }) => {
               ? "Добавить карточку"
               : "Добавить еще одну карточку"}
           </span>
-        </ButtonAdd>
+        </Button>
       )}
     </>
   );
@@ -105,22 +124,6 @@ const IconClear = styled.span`
   }
 `;
 
-const ButtonAdd = styled.button`
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  font: inherit;
-  color: inherit;
-  &:hover {
-    border-radius: 0 0 3px 3px;
-    cursor: pointer;
-    background-color: #c5ccd2;
-  }
-`;
-
 const Footer = styled.div`
   display: flex;
   align-items: center;
@@ -136,3 +139,10 @@ const Input = styled.div`
     cursor: text;
   }
 `;
+
+AddForm.propTypes = {
+  addColumn: PropTypes.func,
+  addCard: PropTypes.func,
+  columnIndex: PropTypes.number,
+  isEmptyColumn: PropTypes.oneOfType([PropTypes.node])
+}
