@@ -3,7 +3,7 @@ TodoList with drag'n'drop like Trello
 
 test assignment for internship in VK(https://vk.com/jobs?w=job111)
 
-Used technology stack
+#Used technology stack
 
 - ReactJS
 - Redux
