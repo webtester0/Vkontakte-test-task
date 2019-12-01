@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import columns from './columns_reducer';
+import columns from './reducer';
 
 export default combineReducers({
     columns
