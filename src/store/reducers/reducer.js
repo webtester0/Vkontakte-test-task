@@ -3,14 +3,13 @@ import reorderCards from "../../helpers/reorderCards";
 
 const initialState = [
   {
-    title: "Первая колонка",
+    title: "First column",
     cards: ["do homework", "drink coffee"]
   },
   {
-    title: "Вторая колонка",
+    title: "Second column",
     cards: [
       "check myciip application",
-      "prepare all docs for VKR",
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae assumenda voluptas veritatis eveniet doloribus voluptatum ullam tempore vel earum quae!",
     ]
   }
