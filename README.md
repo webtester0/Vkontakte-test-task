@@ -2,7 +2,7 @@
 TodoList with drag'n'drop like Trello
 
 ## Demo
-https://vkontakte-test-task.now.sh/
+https://vkontakte-test-task-kaf4ytyxs.now.sh/
 
 Test assignment for internship in VK(https://vk.com/jobs?w=job111)
 
