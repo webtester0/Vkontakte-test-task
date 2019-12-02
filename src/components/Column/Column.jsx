@@ -83,6 +83,7 @@ const ColumnWrapper = styled.div`
   display: inline-block;
   vertical-align: top;
   white-space: nowrap;
+  margin-top: 15px;
 `;
 
 const Inner = styled.div`
