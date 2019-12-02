@@ -10,7 +10,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 const analyzerMode = process.env.ANALYZE ? "server" : "disabled";
 
 const srcPath = path.resolve(__dirname, "src", "index.js");
-const buildPath = path.resolve(__dirname, "dist");
+const buildPath = path.resolve(__dirname, "public");
 const testPath = path.resolve(__dirname, "src");
 
 const getCSSLoader = (withModules = false) => [

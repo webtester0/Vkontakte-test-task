@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "analyze": "ANALYZE=true NODE_ENV=production webpack",
-    "build": "rimraf ./dist && webpack --mode production",
+    "build": "rimraf ./public && webpack --mode production",
     "start:dev": "NODE_ENV=development webpack-dev-server",
     "dev": "webpack --mode development"
   },
